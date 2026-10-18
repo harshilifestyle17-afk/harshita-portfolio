@@ -693,3 +693,158 @@ body {
     }
 
 }
+
+/* GRAPHIC DESIGN PORTFOLIO */
+
+.design-section {
+  padding: 80px 7%;
+  background: #f8f7fc;
+  color: #202033;
+}
+
+.section-heading {
+  max-width: 680px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #7655e8;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.section-heading h2 {
+  font-size: clamp(30px, 5vw, 44px);
+  margin: 12px 0;
+}
+
+.section-heading p {
+  line-height: 1.8;
+  color: #666477;
+}
+
+.freelance-card {
+  max-width: 800px;
+  margin: 0 auto 55px;
+  padding: 30px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #e9e4fa;
+  box-shadow: 0 12px 35px #29204a0c;
+}
+
+.freelance-card h3 {
+  font-size: 25px;
+  margin: 18px 0 10px;
+}
+
+.freelance-card p,
+.design-info p {
+  color: #666477;
+  line-height: 1.7;
+}
+
+.freelance-tag {
+  color: #6846db;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill-tags span,
+.design-info span {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #eee9ff;
+  color: #6043c6;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.work-heading {
+  text-align: center;
+  font-size: 29px;
+  margin-bottom: 30px;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.design-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px #29204a10;
+  transition: transform 0.25s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-6px);
+}
+
+.design-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #e9e5f4;
+}
+
+.design-info {
+  padding: 22px;
+}
+
+.design-info h3 {
+  margin: 0 0 10px;
+}
+
+.design-contact {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.design-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 13px 24px;
+  border-radius: 8px;
+  background: #7655e8;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.design-btn:hover {
+  background: #5d3dc7;
+}
+
+@media (max-width: 800px) {
+  .design-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .design-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .design-section {
+    padding: 55px 5%;
+  }
+}
+
