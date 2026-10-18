@@ -848,3 +848,182 @@ body {
   }
 }
 
+/* GRAPHIC DESIGN PORTFOLIO */
+
+.design-section {
+  padding: 80px 7%;
+  background: #f7f6ff;
+  color: #171b3a;
+}
+
+.design-container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.design-heading {
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: #7655ed;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.design-heading h2 {
+  font-size: clamp(30px, 5vw, 44px);
+  margin: 12px 0;
+}
+
+.design-heading h2 span {
+  color: #7655ed;
+}
+
+.design-heading > p:last-child,
+.freelance-card p,
+.design-info p,
+.gallery-subtitle {
+  color: #6b708c;
+  line-height: 1.7;
+}
+
+.freelance-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 28px;
+  margin-bottom: 45px;
+  border: 1px solid #e8e3ff;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 10px 30px #27205a0b;
+}
+
+.freelance-tag {
+  color: #7655ed;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.freelance-card h3 {
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+.design-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.design-tools span,
+.design-info span {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 30px;
+  background: #eeeaff;
+  color: #6849df;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.work-heading {
+  font-size: 29px;
+  margin-bottom: 5px;
+}
+
+.gallery-subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.design-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  background: white;
+  border: 1px solid #ece9f8;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px #25204a16;
+}
+
+.design-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #e8e5f5;
+}
+
+.design-info {
+  padding: 18px;
+}
+
+.design-info h3 {
+  font-size: 17px;
+  margin: 0 0 8px;
+}
+
+.design-info p {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.design-contact {
+  margin-top: 45px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 16px;
+  background: #eeebff;
+}
+
+.design-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 13px 23px;
+  border-radius: 30px;
+  background: #7655ed;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.design-btn:hover {
+  background: #5b3acb;
+}
+
+@media (max-width: 800px) {
+  .design-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .freelance-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .design-section {
+    padding: 55px 5%;
+  }
+
+  .design-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
